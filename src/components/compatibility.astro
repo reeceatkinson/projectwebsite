@@ -50,40 +50,27 @@ const platforms: Array<CompatibilityItem> = [
   {
     title: "Cloudflare",
     icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
+    url: "https://cloudflare.com/",
   },
   {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
+    title: "Figma",
+    icon: "fa-brands:figma",
+    url: "https://figma.com/",
   },
   {
     title: "GitHub",
     icon: "fa-brands:github",
-    url: "https://pages.github.com/",
+    url: "https://github.com/",
   },
   {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
+    title: "Stripe",
+    icon: "fa-brands:stripe-s",
+    url: "https://stripe.com/",
   },
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
-  <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
-  </Fragment>
-  <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
-  />
+<ContentSection id="compatibility">
+  <CompatibilityList items={frameworks} title="Frameworks" />
+  <CompatibilityList items={platforms} title="Platforms" />
 </ContentSection>
