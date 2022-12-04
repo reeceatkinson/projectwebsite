@@ -11,7 +11,7 @@
     "astro": "astro",
     "format": "prettier --write .",
     "clean": "rimraf dist node_modules",
-    "send": "npm run format && npm run build && npm run preview"
+    "send": "npm run format && npm run build && npm run preview && git commit -a && git push"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^2.1.3",
