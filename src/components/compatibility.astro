@@ -10,29 +10,14 @@ const frameworks: Array<CompatibilityItem> = [
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
+    title: "Astro",
+    icon: "frameworks/astro",
+    url: "https://astro.build/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "Swift",
+    icon: "frameworks/swift",
+    url: "https://developer.apple.com/swift",
   },
 ];
 
@@ -70,7 +55,13 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection id="compatibility">
+<ContentSection id="skills">
+  <div
+    class="items-left justify-left w-full max-w-6xl pb-0 pt-5"
+    style="margin:-15px;"
+  >
+    <h1 class="pb-0 text-left font-bold text-3xl">My Stack</h1>
+  </div>
   <CompatibilityList items={frameworks} title="Frameworks" />
   <CompatibilityList items={platforms} title="Platforms" />
 </ContentSection>
