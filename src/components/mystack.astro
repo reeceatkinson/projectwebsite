@@ -1,5 +1,5 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
+import CompatibilityList from "~/components/mystack-list.astro";
 import ContentSection from "~/components/content-section.astro";
 import type { CompatibilityItem } from "~/types";
 
@@ -14,8 +14,13 @@ const frameworks: Array<CompatibilityItem> = [
     icon: "frameworks/astro",
     url: "https://astro.build/",
   },
+    {
+    title: "Tailwind CSS",
+    icon: "frameworks/tailwindcss",
+    url: "https://tailwindcss.com/",
+  },
   {
-    title: "Swift",
+    title: "Swift UI",
     icon: "frameworks/swift",
     url: "https://developer.apple.com/swift",
   },
