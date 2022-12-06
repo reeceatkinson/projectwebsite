@@ -17,10 +17,10 @@ export default defineConfig({
     }),
     NetlifyCMS({
       config: {
-        logo_url: "https://www.google.com/u/0/ac/images/logo.gif?uid=104478237718514360573&service=google_gsuite",
+        logo_url: "https://reeceatkinson.com/backstage.png",
         media_folder: "public/images",
         public_folder: "/images",
-        display_url: "https://reeceatkinson.com/",
+        display_url: "https://reeceatkinson.com",
         backend: {
           name: 'github',
           repo: 'reeceatkinson/projectwebsite',
