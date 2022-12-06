@@ -1,6 +1,7 @@
 import image from "@astrojs/image";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+import NetlifyCMS from 'astro-netlify-cms';
 
 
 // https://astro.build/config
@@ -13,6 +14,33 @@ export default defineConfig({
     tailwind(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    NetlifyCMS({
+      config: {
+        logo_url: "https://www.google.com/u/0/ac/images/logo.gif?uid=104478237718514360573&service=google_gsuite",
+        media_folder: "public/images",
+        public_folder: "/images",
+        display_url: "https://reeceatkinson.com/",
+        backend: {
+          name: 'github',
+          repo: 'reeceatkinson/projectwebsite',
+          branch: 'main',
+        },
+        collections: [
+          // Define a blog post collection
+          {
+            name: 'posts',
+            label: 'Blog Posts',
+            folder: 'src/pages/posts',
+            create: true,
+            delete: true,
+            fields: [
+              { name: 'title', widget: 'string', label: 'Post Title' },
+              { name: 'body', widget: 'markdown', label: 'Post Body' },
+            ],
+          },
+        ],
+      },
     }),
     sitemap(),
   ],
